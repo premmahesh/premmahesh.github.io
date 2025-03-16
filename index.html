@@ -1,343 +1,1112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portfolio of Prem Mahesh">
-    <meta name="author" content="Prem Mahesh">
-    <title>Prem Mahesh | Portfolio</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Custom styles -->
-    <link rel="stylesheet" href="assets/css/steller.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Maheshwari | Data Analyst & Business Intelligence Specialist</title>
+    
+    <!-- Meta tags for SEO and social sharing -->
+    <meta name="description" content="Data Analyst with 9+ years of experience in business analytics, program management, and client relationship management specializing in SQL, Python, and data visualization.">
+    <meta name="keywords" content="data analyst, business intelligence, portfolio, Prem Maheshwari, Python, SQL, Tableau, Power BI, Looker">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Owl Carousel -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    
+    <!-- Magnific Popup -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
-    <!-- Page navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Prem Maheshwari</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertise">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboards">Dashboards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
+                <!-- CV Download Button in Nav -->
+                <a href="resume/Prem_Maheshwari_CV.pdf" class="btn btn-primary ms-3 download-cv-btn" download>
+                    <i class="fas fa-download me-1"></i> CV
+                </a>
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="btn btn-sm btn-outline-dark ms-2"><i class="fas fa-moon"></i></button>
             </div>
-        </div>          
+        </div>
     </nav>
-    <!-- End of page navigation -->
 
-    <!-- Page Header -->
-    <header class="header" id="home">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="badge bg-primary mb-3">Data Analyst & Business Intelligence Specialist</span>
+                    <h1>Hello, I'm <span class="highlight">Prem Maheshwari</span></h1>
+                    <h2>I transform <span class="typed-text"></span></h2>
+                    <p class="lead">With 9+ years of analytics experience and a proven track record of delivering actionable insights that drive business value worth $10M+</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="resume/Prem_Maheshwari_CV.pdf" class="btn btn-outline-primary" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="images/profile.jpg" alt="Prem Maheshwari" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Professional Summary Section (NEW) -->
+    <section id="summary" class="section-padding bg-light">
         <div class="container">
-            <div class="infos">
-                <h6 class="subtitle">Hello, I'm</h6>
-                <h6 class="title">Prem Maheshwari</h6>
-                <p>Sales & Bsuiness Intelligence Analyst</p>
-
-                <div class="buttons pt-3">
-                    <button class="btn btn-primary rounded">HIRE ME</button>
-                    <button class="btn btn-dark rounded">DOWNLOAD CV</button>
-                </div>      
-
-                <div class="socials mt-4">
-                    <a class="social-item" href="https://www.linkedin.com/in/your-linkedin-profile/"><i class="ti-linkedin"></i></a>
-                </div>
-            </div>              
-            <div class="img-holder">
-                <img src="assets/imgs/man.svg" alt="Prem Mahesh">
-            </div>      
-        </div>  
-
-        <!-- Header-widget -->
-        <div class="widget">
-            <div class="widget-item">
-                <h2>124</h2>
-                <p>Happy Clients</p>
-            </div>
-            <div class="widget-item">
-                <h2>456</h2>
-                <p>Projects Completed</p>
-            </div>
-            <div class="widget-item">
-                <h2>789</h2>
-                <p>Awards Won</p>
-            </div>
-        </div>
-    </header>
-    <!-- End of Page Header -->
-
-    <!-- About section -->
-    <section id="about" class="section mt-3">
-        <div class="container mt-5">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3">
-                    <img src="assets/imgs/avatar.jpg" alt="Avatar" class="img-thumbnail mb-4">
-                </div>
-                <div class="pl-md-4 col-md-9">
-                    <h6 class="title">Prem Mahesh</h6>
-                    <p class="subtitle">Full Stack Developer</p>
-                    <p>Passionate developer with expertise in modern web technologies and a knack for creating seamless user experiences. Always eager to learn and adapt to new challenges.</p>
-                    <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>                   
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="summary-card" data-aos="fade-up">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center mb-4 mb-md-0">
+                                <div class="summary-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h2 class="summary-title">Why Hire Me?</h2>
+                                <p class="summary-text">I'm a data-driven professional who transforms complex business problems into actionable insights. My unique blend of technical skills and business acumen allows me to bridge the gap between data and strategic decision-making.</p>
+                                <div class="summary-stats">
+                                    <div class="stat-item">
+                                        <span class="counter-value">9</span><span>+</span>
+                                        <p>Years Experience</p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="counter-value">10</span><span>M+</span>
+                                        <p>Revenue Impact</p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="counter-value">30</span><span>+</span>
+                                        <p>Projects Delivered</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills section -->
-    <section id="skills" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Skills</h6>
-            <h6 class="section-title mb-4">Why Choose Me</h6>
-            <p class="mb-5 pb-4">Skilled in various domains, here are some of the technologies and tools I'm proficient in:</p>
-
-            <div class="row text-left">
-                <div class="col-sm-6">
-                    <h6 class="mb-3">JavaScript</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">React</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Node.js</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span>85%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">CSS</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>80%</span></div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </section>
-    <!-- End of Skills section -->
-
-    <!-- Portfolio section -->
-    <section id="portfolio" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-4">Check My Projects</h6>
-            <p class="mb-5 pb-4">Here are some of the projects I've worked on:</p>
-
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-1.jpg" alt="Project 1">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project 1</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                    <p>Data-driven professional with 9+ years of experience in business analytics, program management, and client relationship management. MSc in Business Analytics with expertise in SQL, Python, and data visualization tools.</p>
+                    <p>I have a proven track record of delivering actionable insights, driving strategic decisions, and leading cross-functional teams to achieve business objectives exceeding USD 10 million in revenue.</p>
+                    <p>My specialties include:</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Transforming raw data into strategic business insights</li>
+                        <li><i class="fas fa-check-circle"></i> Creating interactive dashboards that drive decision-making</li>
+                        <li><i class="fas fa-check-circle"></i> Optimizing business performance through data analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Leading analytics initiatives across departments</li>
+                    </ul>
+                    <div class="about-buttons mt-4">
+                        <a href="resume/Prem_Maheshwari_CV.pdf" class="btn btn-outline-primary" download>Download CV</a>
+                        <a href="#contact" class="btn btn-primary ms-2">Get In Touch</a>
                     </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-2.jpg" alt="Project 2">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project 2</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
                 </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-3.jpg" alt="Project 3">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project 3</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-4.jpg" alt="Project 4">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project 4</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-5.jpg" alt="Project 5">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project 5</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-6.jpg" alt="Project 6">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project 6</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Portfolio section -->
-
-    <!-- Testimonial Section -->
-    <section id="testimonial" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Testimonial</h6>
-            <h6 class="section-title mb-4">What People Say About Me</h6>
-            <p class="mb-5 pb-4">Here's what some of my clients and colleagues have to say:</p>
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card testimonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-1.jpg" alt="Client 1">
-                                <p>Prem is a dedicated developer who delivers high-quality work on time. Highly recommended!</p>
-                                <h1 class="title">Emma Re</h1>
-                                <h1 class="subtitle">Graphic Designer</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testimonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-2.jpg" alt="Client 2">
-                                <p>Working with Prem was a great experience. His technical skills are top-notch.</p>
-                                <h1 class="title">James Bert</h1>
-                                <h1 class="subtitle">Web Designer</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testimonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-3.jpg" alt="Client 3">
-                                <p>Prem's ability to solve complex problems is impressive. He is a valuable asset to any team.</p>
-                                <h1 class="title">Michael Abra</h1>
-                                <h1 class="subtitle">Web Developer</h1>
-                            </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="about-card">
+                        <h3>Personal Details</h3>
+                        <ul class="personal-info">
+                            <li><span>Name:</span> Prem Maheshwari</li>
+                            <li><span>Email:</span> premmaheshwari089@gmail.com</li>
+                            <li><span>Phone:</span> +353 0892085650</li>
+                            <li><span>Location:</span> Dublin, Ireland</li>
+                            <li><span>Experience:</span> 9+ Years</li>
+                            <li><span>Availability:</span> Available for new opportunities</li>
+                        </ul>
+                        <div class="social-links mt-4">
+                            <a href="https://www.linkedin.com/in/prem-maheshwari/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/premmaheshwari" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of Testimonial section -->
+
+    <!-- Expertise Section (Renamed from Skills) -->
+    <section id="expertise" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="section-title">My Expertise</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">A comprehensive set of technical and analytical skills that enable me to deliver impactful business solutions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="expertise-card">
+                        <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                        
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h4>SQL</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h4>Python</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h4>R</h4>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h4>Data Cleaning & Analysis</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="expertise-card">
+                        <h3><i class="fas fa-chart-bar"></i> Visualization Tools</h3>
+                        
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h4>Tableau</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h4>Power BI</h4>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h4>Looker</h4>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <h4>SPSS</h4>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="expertise-card">
+                        <h3><i class="fas fa-lightbulb"></i> Business Intelligence</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Revenue Forecasting</li>
+                            <li><i class="fas fa-check-circle"></i> Strategic Planning</li>
+                            <li><i class="fas fa-check-circle"></i> Portfolio Analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Performance Metrics</li>
+                            <li><i class="fas fa-check-circle"></i> Market Trend Analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Risk Assessment Models</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="expertise-card">
+                        <h3><i class="fas fa-tasks"></i> Project Management</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Agile Methodologies (KANBAN, SCRUM)</li>
+                            <li><i class="fas fa-check-circle"></i> Stakeholder Management</li>
+                            <li><i class="fas fa-check-circle"></i> Cross-functional Leadership</li>
+                            <li><i class="fas fa-check-circle"></i> Data Storytelling</li>
+                            <li><i class="fas fa-check-circle"></i> Process Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Team Facilitation & Coaching</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (Renamed from Projects) -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Showcasing my analytical capabilities through real-world business problems I've solved</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Filter -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-filter text-center mb-4">
+                        <button class="btn btn-filter active" data-filter="all">All</button>
+                        <button class="btn btn-filter" data-filter="data-analysis">Data Analysis</button>
+                        <button class="btn btn-filter" data-filter="visualization">Visualization</button>
+                        <button class="btn btn-filter" data-filter="machine-learning">Machine Learning</button>
+                        <button class="btn btn-filter" data-filter="forecasting">Forecasting</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row portfolio-container">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item data-analysis visualization" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="Insurance Claims Analysis Dashboard" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-sm btn-light project-demo"><i class="fas fa-link"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-light project-code"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Insurance Claims Analysis Dashboard</h4>
+                            <p class="project-description">Interactive Tableau dashboard analyzing claims data and premium trends to identify risk patterns and optimize pricing strategies.</p>
+                            <div class="project-impact">
+                                <span><i class="fas fa-arrow-up"></i> Reduced loss ratio by 15%</span>
+                                <span><i class="fas fa-chart-line"></i> $3M revenue growth</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="badge bg-light text-dark">Tableau</span>
+                                <span class="badge bg-light text-dark">SQL</span>
+                                <span class="badge bg-light text-dark">Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item machine-learning data-analysis" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Client Portfolio Risk Assessment" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-sm btn-light project-demo"><i class="fas fa-link"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-light project-code"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Client Portfolio Risk Assessment</h4>
+                            <p class="project-description">Predictive analytics model built in Python to assess portfolio risk, identify potential losses, and recommend optimization strategies.</p>
+                            <div class="project-impact">
+                                <span><i class="fas fa-arrow-down"></i> Reduced risk exposure by 50%</span>
+                                <span><i class="fas fa-thumbs-up"></i> Improved client satisfaction</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="badge bg-light text-dark">Python</span>
+                                <span class="badge bg-light text-dark">Machine Learning</span>
+                                <span class="badge bg-light text-dark">Risk Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item forecasting visualization" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Revenue Forecasting Tool" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-sm btn-light project-demo"><i class="fas fa-link"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-light project-code"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Revenue Forecasting Tool</h4>
+                            <p class="project-description">Time series analysis model in R that provides accurate monthly revenue projections with interactive Power BI visualization dashboard.</p>
+                            <div class="project-impact">
+                                <span><i class="fas fa-bullseye"></i> 95% forecast accuracy</span>
+                                <span><i class="fas fa-clock"></i> 30% faster reporting</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="badge bg-light text-dark">R</span>
+                                <span class="badge bg-light text-dark">Power BI</span>
+                                <span class="badge bg-light text-dark">Time Series</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 (Added new project) -->
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item data-analysis visualization" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project4.jpg" alt="Distribution Channel Optimization" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-sm btn-light project-demo"><i class="fas fa-link"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-light project-code"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Distribution Channel Optimization</h4>
+                            <p class="project-description">Analysis of partner performance and channel effectiveness with interactive visualization of activation metrics and conversion rates.</p>
+                            <div class="project-impact">
+                                <span><i class="fas fa-arrow-up"></i> 35% channel activation</span>
+                                <span><i class="fas fa-trophy"></i> Top performer recognition</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="badge bg-light text-dark">SQL</span>
+                                <span class="badge bg-light text-dark">Looker</span>
+                                <span class="badge bg-light text-dark">CRM Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 (Added new project) -->
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item machine-learning forecasting" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project5.jpg" alt="Claims Fraud Detection System" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-sm btn-light project-demo"><i class="fas fa-link"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-light project-code"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Claims Fraud Detection System</h4>
+                            <p class="project-description">Machine learning model that identifies potential fraudulent claims using historical patterns and anomaly detection techniques.</p>
+                            <div class="project-impact">
+                                <span><i class="fas fa-shield-alt"></i> 28% fraud reduction</span>
+                                <span><i class="fas fa-dollar-sign"></i> $1.2M savings</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="badge bg-light text-dark">Python</span>
+                                <span class="badge bg-light text-dark">Scikit-learn</span>
+                                <span class="badge bg-light text-dark">Anomaly Detection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 (Added new project) -->
+                <div class="col-md-6 col-lg-4 mb-4 portfolio-item visualization data-analysis" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project6.jpg" alt="Executive KPI Dashboard" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-sm btn-light project-demo"><i class="fas fa-link"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-light project-code"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Executive KPI Dashboard</h4>
+                            <p class="project-description">Comprehensive performance visualization tool for C-suite executives providing real-time metrics across all business units.</p>
+                            <div class="project-impact">
+                                <span><i class="fas fa-tachometer-alt"></i> Real-time decision support</span>
+                                <span><i class="fas fa-chart-pie"></i> Cross-unit visibility</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="badge bg-light text-dark">Power BI</span>
+                                <span class="badge bg-light text-dark">DAX</span>
+                                <span class="badge bg-light text-dark">Data Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <a href="https://github.com/premmaheshwari" target="_blank" class="btn btn-outline-primary">See More Projects on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboards" class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="section-title">Interactive Dashboards</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Explore my data visualization work through these interactive dashboards that drive business decisions</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Tabs -->
+            <div class="dashboard-tabs">
+                <ul class="nav nav-pills mb-4 justify-content-center" id="dashboardTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="powerbi-tab" data-bs-toggle="pill" data-bs-target="#powerbi" type="button" role="tab" aria-controls="powerbi"
+                        <button class="nav-link active" id="powerbi-tab" data-bs-toggle="pill" data-bs-target="#powerbi" type="button" role="tab" aria-controls="powerbi" aria-selected="true">Power BI</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tableau-tab" data-bs-toggle="pill" data-bs-target="#tableau" type="button" role="tab" aria-controls="tableau" aria-selected="false">Tableau</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="looker-tab" data-bs-toggle="pill" data-bs-target="#looker" type="button" role="tab" aria-controls="looker" aria-selected="false">Looker</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="dashboardTabContent">
+                    <!-- Power BI Dashboard -->
+                    <div class="tab-pane fade show active" id="powerbi" role="tabpanel" aria-labelledby="powerbi-tab">
+                        <div class="row mb-4" data-aos="fade-up">
+                            <div class="col-md-6">
+                                <div class="dashboard-info">
+                                    <h3>Insurance Performance Dashboard</h3>
+                                    <p>This Power BI dashboard provides comprehensive insights into insurance portfolio performance across different products, regions, and customer segments. Key metrics include loss ratios, premium growth, and claims settlement efficiency.</p>
+                                    <div class="dashboard-impact">
+                                        <span class="impact-item"><i class="fas fa-chart-line"></i> Drove 15% portfolio growth</span>
+                                        <span class="impact-item"><i class="fas fa-bolt"></i> Reduced decision time by 40%</span>
+                                    </div>
+                                    <div class="dashboard-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> Updated: Monthly</span>
+                                        <span><i class="fas fa-database"></i> Data Source: SQL Server</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dashboard-embed" data-aspect-ratio="0.75">
+                                    <!-- Power BI Embed Code -->
+                                    <!-- For GitHub Pages hosting, using static image with a link instead -->
+                                    <div class="dashboard-placeholder">
+                                        <img src="images/dashboards/powerbi-insurance.jpg" alt="Insurance Performance Dashboard" class="img-fluid">
+                                        <a href="https://app.powerbi.com/view?r=YOUR_REPORT_ID" class="dashboard-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> View Interactive Dashboard
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Second Power BI Dashboard -->
+                        <div class="row" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-md-6 order-md-2">
+                                <div class="dashboard-info">
+                                    <h3>Revenue Forecast Analytics</h3>
+                                    <p>This dashboard presents time series forecasting models for revenue projections. It includes trend analysis, seasonal patterns, and predictive metrics with confidence intervals to support financial planning and goal setting.</p>
+                                    <div class="dashboard-impact">
+                                        <span class="impact-item"><i class="fas fa-bullseye"></i> 95% forecast accuracy</span>
+                                        <span class="impact-item"><i class="fas fa-user-tie"></i> Used by C-suite executives</span>
+                                    </div>
+                                    <div class="dashboard-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> Updated: Weekly</span>
+                                        <span><i class="fas fa-database"></i> Data Source: Finance Database</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <div class="dashboard-embed" data-aspect-ratio="0.75">
+                                    <!-- Power BI Embed Code -->
+                                    <div class="dashboard-placeholder">
+                                        <img src="images/dashboards/powerbi-revenue.jpg" alt="Revenue Forecast Dashboard" class="img-fluid">
+                                        <a href="https://app.powerbi.com/view?r=YOUR_REPORT_ID2" class="dashboard-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> View Interactive Dashboard
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tableau Dashboard -->
+                    <div class="tab-pane fade" id="tableau" role="tabpanel" aria-labelledby="tableau-tab">
+                        <div class="row mb-4" data-aos="fade-up">
+                            <div class="col-md-6">
+                                <div class="dashboard-info">
+                                    <h3>Client Portfolio Risk Analysis</h3>
+                                    <p>This Tableau dashboard presents a comprehensive view of client portfolio risk, including exposure analysis, risk concentration metrics, and performance benchmarks across different market segments and product categories.</p>
+                                    <div class="dashboard-impact">
+                                        <span class="impact-item"><i class="fas fa-shield-alt"></i> Identified 40% of high-risk clients</span>
+                                        <span class="impact-item"><i class="fas fa-balance-scale"></i> Optimized risk allocation</span>
+                                    </div>
+                                    <div class="dashboard-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> Updated: Quarterly</span>
+                                        <span><i class="fas fa-database"></i> Data Source: Client Database</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dashboard-embed" data-aspect-ratio="0.8">
+                                    <!-- Tableau Public Static Alternative -->
+                                    <div class="dashboard-placeholder">
+                                        <img src="images/dashboards/tableau-portfolio.jpg" alt="Portfolio Risk Dashboard" class="img-fluid">
+                                        <a href="https://public.tableau.com/views/YOUR_TABLEAU_VIZ" class="dashboard-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> View Interactive Dashboard
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Second Tableau Dashboard -->
+                        <div class="row" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-md-6 order-md-2">
+                                <div class="dashboard-info">
+                                    <h3>Channel Performance Analysis</h3>
+                                    <p>This dashboard tracks the performance of different distribution channels and partner networks. It measures activation rates, conversion metrics, and growth patterns to optimize channel strategy and partner management.</p>
+                                    <div class="dashboard-impact">
+                                        <span class="impact-item"><i class="fas fa-users"></i> Activated 20+ new partners monthly</span>
+                                        <span class="impact-item"><i class="fas fa-percentage"></i> 25% revenue growth from channels</span>
+                                    </div>
+                                    <div class="dashboard-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> Updated: Monthly</span>
+                                        <span><i class="fas fa-database"></i> Data Source: CRM System</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <div class="dashboard-embed" data-aspect-ratio="0.8">
+                                    <!-- Tableau Public Static Alternative -->
+                                    <div class="dashboard-placeholder">
+                                        <img src="images/dashboards/tableau-channels.jpg" alt="Channel Performance Dashboard" class="img-fluid">
+                                        <a href="https://public.tableau.com/views/YOUR_TABLEAU_VIZ2" class="dashboard-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> View Interactive Dashboard
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Looker Dashboard -->
+                    <div class="tab-pane fade" id="looker" role="tabpanel" aria-labelledby="looker-tab">
+                        <div class="row" data-aos="fade-up">
+                            <div class="col-md-6">
+                                <div class="dashboard-info">
+                                    <h3>Claims Analytics Dashboard</h3>
+                                    <p>This Looker dashboard provides deep insights into claims patterns, settlement efficiency, and fraud indicators. It helps identify optimization opportunities in the claims process and improves customer experience.</p>
+                                    <div class="dashboard-impact">
+                                        <span class="impact-item"><i class="fas fa-tachometer-alt"></i> 40% faster claims processing</span>
+                                        <span class="impact-item"><i class="fas fa-user-check"></i> 30% higher satisfaction scores</span>
+                                    </div>
+                                    <div class="dashboard-meta">
+                                        <span><i class="fas fa-calendar-alt"></i> Updated: Daily</span>
+                                        <span><i class="fas fa-database"></i> Data Source: Claims Database</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dashboard-embed" data-aspect-ratio="0.7">
+                                    <!-- Looker Static Alternative -->
+                                    <div class="dashboard-placeholder">
+                                        <img src="images/dashboards/looker-claims.jpg" alt="Claims Analytics Dashboard" class="img-fluid">
+                                        <a href="https://looker.example.com/dashboards/YOUR_DASHBOARD_ID" class="dashboard-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> View Interactive Dashboard
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Notes -->
+            <div class="dashboard-notes mt-5">
+                <div class="alert alert-info">
+                    <h4><i class="fas fa-info-circle"></i> About These Dashboards</h4>
+                    <p>These interactive dashboards demonstrate my ability to transform complex data into meaningful visualizations that drive business decisions. Due to GitHub Pages hosting limitations, the examples shown are static screenshots. I would be happy to provide a live demonstration of these dashboards during an interview.</p>
+                    <p>All data has been anonymized to protect confidentiality while still showcasing the analytical capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (NEW) -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="section-title">What People Say</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Feedback from colleagues and stakeholders who have experienced my data-driven approach</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-carousel owl-carousel">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-item" data-aos="fade-up">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <p class="testimonial-text">Prem has an exceptional ability to translate complex data into actionable business insights. His work on our portfolio risk assessment transformed how we evaluate client relationships and significantly improved our profitability.</p>
+                                <div class="testimonial-author">
+                                    <img src="images/testimonials/testimonial1.jpg" alt="John Smith" class="author-img">
+                                    <div class="author-info">
+                                        <h5>John Smith</h5>
+                                        <p>VP of Operations, Tata AIG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <p class="testimonial-text">The revenue forecasting dashboard that Prem created has become an essential tool for our executive team. His attention to detail and understanding of business needs resulted in a solution that delivers remarkable accuracy and insight.</p>
+                                <div class="testimonial-author">
+                                    <img src="images/testimonials/testimonial2.jpg" alt="Sarah Johnson" class="author-img">
+                                    <div class="author-info">
+                                        <h5>Sarah Johnson</h5>
+                                        <p>CFO, ICICI Lombard</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <p class="testimonial-text">Working with Prem on our channel optimization project was a game-changer. His data-driven approach and collaborative spirit helped us identify untapped opportunities that resulted in a 25% increase in partner activations.</p>
+                                <div class="testimonial-author">
+                                    <img src="images/testimonials/testimonial3.jpg" alt="Michael Chen" class="author-img">
+                                    <div class="author-info">
+                                        <h5>Michael Chen</h5>
+                                        <p>Head of Distribution, ICICI Lombard</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Moved down) -->
+    <section id="experience" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">A track record of delivering data-driven solutions in the insurance and technology sectors</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="timeline">
+                        <!-- Experience 1 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Chief Manager – Business Development & Analytics</h3>
+                                    <h4 class="timeline-subtitle">Tata AIG General Insurance Company Ltd., India</h4>
+                                    <p class="timeline-date"><i class="far fa-calendar-alt"></i> November 2021 - August 2023</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <h5 class="mb-3">Key Achievements:</h5>
+                                    <ul class="timeline-description">
+                                        <li><strong>Revenue Growth:</strong> Transformed underperforming product lines by analyzing claims data and premium trends, resulting in USD 3 million in new business revenue while maintaining loss ratio below 75%</li>
+                                        <li><strong>Risk Mitigation:</strong> Addressed client portfolio inefficiencies by developing data-driven risk models, which reduced potential losses by over 50% and improved client satisfaction scores</li>
+                                        <li><strong>Process Optimization:</strong> Overcame business unit silos by implementing Agile methodologies and creating interactive dashboards for cross-functional teams, increasing project delivery speed by 30%</li>
+                                        <li><strong>Forecasting Excellence:</strong> Resolved forecasting accuracy challenges by developing and presenting data-backed monthly revenue projections to C-suite executives, achieving 95% of projected targets</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Experience 2 -->
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Senior Manager – Business Development & Analytics</h3>
+                                    <h4 class="timeline-subtitle">ICICI Lombard General Insurance Company Ltd., India</h4>
+                                    <p class="timeline-date"><i class="far fa-calendar-alt"></i> April 2016 - November 2021</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <h5 class="mb-3">Key Achievements:</h5>
+                                    <ul class="timeline-description">
+                                        <li><strong>Channel Activation:</strong> Tackled underutilized channel potential by implementing data-driven activation strategies, consistently exceeding monthly targets of 20 channel activations and being recognized twice as a top performer</li>
+                                        <li><strong>Market Expansion:</strong> Addressed market expansion challenges by analyzing untapped segments, resulting in the creation of new business verticals that generated 25% additional revenue streams</li>
+                                        <li><strong>Client Retention:</strong> Solved client retention issues by analyzing portfolio data to design tailored products, increasing retention rates by 35% and reducing client losses by more than 50%</li>
+                                        <li><strong>Operational Efficiency:</strong> Streamlined broker operations by optimizing a SaaS portal for pre-underwritten products, reducing processing time by 40% and improving broker satisfaction scores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Experience 3 -->
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-title">Software Engineer - ERP Implementation Consultant</h3>
+                                    <h4 class="timeline-subtitle">iSmart Business Solutions Pvt Ltd., India</h4>
+                                    <p class="timeline-date"><i class="far fa-calendar-alt"></i> February 2012 - November 2013</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <h5 class="mb-3">Key Achievements:</h5>
+                                    <ul class="timeline-description">
+                                        <li><strong>Performance Optimization:</strong> Addressed database performance issues by developing optimized SQL queries, reducing system response time by 45% and improving data retrieval efficiency</li>
+                                        <li><strong>Quality Assurance:</strong> Solved integration challenges by conducting comprehensive user acceptance testing, resulting in zero critical defects at deployment and successful client adoption</li>
+                                        <li><strong>UX Enhancement:</strong> Improved system usability by collaborating with cross-functional teams to redesign key interfaces, increasing user efficiency by 30%</li>
+                                        <li><strong>Training & Support:</strong> Tackled user adoption barriers by developing targeted training materials and providing technical support, resulting in 95% user proficiency within two months of implementation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education Section (Compact version) -->
+            <div class="row mt-5">
+                <div class="col-md-12 text-center mb-4">
+                    <h3>Education & Certifications</h3>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>MSc in Business Analytics</h4>
+                        <p class="education-place">University of Galway, Ireland</p>
+                        <p class="education-date"><i class="far fa-calendar-alt"></i> 2023 - 2024</p>
+                        <p class="education-note">First Class Honours (1.1)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>PG Diploma in Management</h4>
+                        <p class="education-place">IMT Nagpur, India</p>
+                        <p class="education-date"><i class="far fa-calendar-alt"></i> 2014 - 2016</p>
+                        <p class="education-note">Marketing & Operations</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Key Certifications</h4>
+                        <ul class="certification-list">
+                            <li>APM Project Management Qualification (PMQ) – 2024</li>
+                            <li>Certified Lean Six Sigma Green Belt - KPMG - 2016</li>
+                            <li>University of Galway Employability Award - 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (NEW) -->
+    <section id="cta" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cta-card" data-aos="fade-up">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h2>Looking for a Data Analytics Professional?</h2>
+                                <p>I'm currently available for new opportunities and would love to discuss how my skills can benefit your organization.</p>
+                            </div>
+                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                                <a href="resume/Prem_Maheshwari_CV.pdf" class="btn btn-outline-primary ms-2" download>Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="position-relative section">
-        <div class="container text-center">
-            <h6 class="subtitle">Contact</h6>
-            <h6 class="section-title mb-4">Get In Touch With Me</h6>
-            <p class="mb-5 pb-4">Feel free to reach out to me for any projects or collaborations:</p>
-
-            <div class="contact text-left">
-                <div class="form">
-                    <h6 class="subtitle">Available 24/7</h6>
-                    <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-infos">
-                    <div class="item">
-                        <i class="ti-location-pin"></i>
-                        <div class="">
-                            <h5>Location</h5>
-                            <p> 12345 Fake ST NoWhere AB Country</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-mobile"></i>
-                        <div>
-                            <h5>Phone Number</h5>
-                            <p>(123) 456-7890</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-email"></i>
-                        <div class="mb-0">
-                            <h5>Email Address</h5>
-                            <p>info@website.com</p>
-                        </div>
-                    </div>
-                </div>                  
-            </div>
-        </div>  
-        <div id="map">
-            <iframe src="https://snazzymaps.com/embed/61257"></iframe>
-        </div>      
-    </section>
-    <!-- End of Contact Section -->
-
-    <!-- Page Footer -->
-    <footer class="page-footer">
+    <section id="contact" class="section-padding bg-light">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; Prem Mahesh</p>
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Let's connect to discuss how my data analytics expertise can benefit your organization</p>
                 </div>
-                <div class="col-sm-6">
-                    <div class="socials">
-                        <a class="social-item" href="https://www.linkedin.com/in/your-linkedin-profile/"><i class="ti-linkedin"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out to me for opportunities in data analytics, business intelligence or to discuss potential projects. I'm always open to exploring new challenges and collaborations.</p>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:premmaheshwari089@gmail.com">premmaheshwari089@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+3530892085650">+353 0892085650</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Dublin, Ireland</p>
+                            </div>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="https://www.linkedin.com/in/prem-maheshwari/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/premmaheshwari" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form-card">
+                        <h3>Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" style="height: 150px" placeholder="Your Message" required></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
+                            </div>
+                            <div id="formMessage"></div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </footer> 
-    <!-- End of page footer -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-info">
+                        <h3 class="footer-logo">Prem Maheshwari</h3>
+                        <p>Data Analyst & Business Intelligence Specialist based in Dublin, Ireland. Transforming complex data into actionable business insights.</p>
+                        <div class="social-links mt-3">
+                            <a href="https://www.linkedin.com/in/prem-maheshwari/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/premmaheshwari" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-title">More Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#dashboards">Dashboards</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="resume/Prem_Maheshwari_CV.pdf" download>Download CV</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:premmaheshwari089@gmail.com">premmaheshwari089@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+3530892085650">+353 0892085650</a>
+                          <li><i class="fas fa-phone"></i> <a href="tel:+3530892085650">+353 0892085650</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dublin, Ireland</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>&copy; 2025 Prem Maheshwari. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Preloader JavaScript -->
+    <script>
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        });
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Typed.js for animated text -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
-    <!-- custom js -->
-    <script src="assets/js/steller.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
 </body>
 </html>
