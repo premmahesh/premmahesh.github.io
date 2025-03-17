@@ -30,7 +30,7 @@
     
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/github-nav.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
 </head>
 <body>
     <!-- Preloader -->
@@ -38,49 +38,38 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Navigation -->
-
-<!-- GitHub-style Navigation HTML -->
-<header class="header">
+    <!-- Simple Fixed Navigation HTML -->
+<nav class="simple-navbar">
   <div class="container">
-    <div class="header-content">
-      <!-- Logo/brand -->
-      <div class="header-brand">
-        <a href="#" class="logo">Prem Maheshwari</a>
-      </div>
-      
-      <!-- Mobile hamburger menu button -->
-      <button class="navbar-toggler" id="navbarToggler" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <i class="fas fa-bars"></i>
-        </span>
+    <div class="navbar-content">
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobileMenuToggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
       </button>
       
-      <!-- Navigation menu -->
-      <nav class="navigation" id="mainNav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#expertise" class="nav-link">Expertise</a></li>
-          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="#dashboards" class="nav-link">Dashboards</a></li>
-          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-          <li class="nav-item cv-button">
-            <a href="resume/Prem_Maheshwari_CV.pdf" class="btn btn-primary btn-sm" download>
-              <i class="fas fa-download"></i> CV
-            </a>
-          </li>
-          <li class="nav-item theme-toggle">
-            <button id="themeToggle" aria-label="Toggle dark mode">
-              <i class="fas fa-moon"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
+      <!-- Navigation Links -->
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#home" class="nav-item active">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#expertise" class="nav-item">Expertise</a></li>
+        <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+        <li><a href="#dashboards" class="nav-item">Dashboards</a></li>
+        <li><a href="#experience" class="nav-item">Experience</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      
+      <!-- Actions (always visible) -->
+      <div class="navbar-actions">
+        <a href="resume/Prem_Maheshwari_CV.pdf" class="cv-button" download>
+          <i class="fas fa-download"></i> CV
+        </a>
+        <button id="themeToggle" class="theme-button">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
     </div>
   </div>
-</header>
+</nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -1113,6 +1102,6 @@
         });
     </script>
 <!-- Add this right before the closing </body> tag -->
-<script src="js/github-nav.js"></script>   
+<script src="js/navbar.js"></script>  
 </body>
 </html>
