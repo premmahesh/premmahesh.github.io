@@ -1,85 +1,80 @@
-// Add this to your main.js file or create a new sidebar.js file
+// Simple Fixed Navigation JavaScript
 
 $(document).ready(function() {
     "use strict";
     
-    // Sidebar Toggle on Mobile
-    $('#sidebarToggler').on('click', function() {
-        $('body').toggleClass('sidebar-open');
+    // Mobile menu toggle
+    $("#mobileMenuToggle").click(function() {
+      $("#navLinks").toggleClass("open");
     });
     
-    // Close sidebar when clicking outside on mobile
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('.sidebar').length && 
-            !$(e.target).closest('#sidebarToggler').length && 
-            $('body').hasClass('sidebar-open')) {
-            $('body').removeClass('sidebar-open');
-        }
+    // Close mobile menu when clicking a link
+    $(".nav-item").click(function() {
+      $("#navLinks").removeClass("open");
     });
     
-    // Sidebar minimize/expand toggle (optional feature)
-    $('.sidebar-brand').on('dblclick', function() {
-        $('body').toggleClass('sidebar-collapsed');
+    // Close mobile menu when clicking outside
+    $(document).click(function(event) {
+      if (!$(event.target).closest('.simple-navbar').length) {
+        $("#navLinks").removeClass("open");
+      }
     });
     
-    // Active link highlighting
-    $('.sidebar-nav .nav-link').on('click', function() {
-        $('.sidebar-nav .nav-link').removeClass('active');
-        $(this).addClass('active');
+    // Update active state on scroll
+    $(window).scroll(function() {
+      var scrollPosition = $(this).scrollTop() + 100;
+      
+      // Check each section's position
+      $("section").each(function() {
+        var sectionTop = $(this).offset().top;
+        var sectionBottom = sectionTop + $(this).outerHeight();
+        var sectionId = $(this).attr("id");
         
-        // On mobile, close the sidebar after clicking a link
-        if (window.innerWidth < 992) {
-            $('body').removeClass('sidebar-open');
+        // If the current scroll position is within this section
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          // Remove active class from all links
+          $(".nav-item").removeClass("active");
+          
+          // Add active class to the corresponding nav item
+          $(".nav-item[href='#" + sectionId + "']").addClass("active");
         }
+      });
     });
     
-    // Update active link on scroll
-    $(window).on('scroll', function() {
-        updateActiveLink();
-    });
-    
-    function updateActiveLink() {
-        const scrollPosition = $(window).scrollTop() + 100;
+    // Initialize active state on page load
+    function setInitialActive() {
+      var scrollPosition = $(window).scrollTop() + 100;
+      
+      $("section").each(function() {
+        var sectionTop = $(this).offset().top;
+        var sectionBottom = sectionTop + $(this).outerHeight();
+        var sectionId = $(this).attr("id");
         
-        $('section').each(function() {
-            const currentSection = $(this);
-            const sectionTop = currentSection.offset().top;
-            const sectionHeight = currentSection.outerHeight();
-            
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                const targetId = currentSection.attr('id');
-                $('.sidebar-nav .nav-link').removeClass('active');
-                $(`.sidebar-nav .nav-link[href="#${targetId}"]`).addClass('active');
-            }
-        });
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          $(".nav-item").removeClass("active");
+          $(".nav-item[href='#" + sectionId + "']").addClass("active");
+        }
+      });
     }
     
-    // Initialize correct active state on page load
-    updateActiveLink();
+    setInitialActive();
     
-    // Handle theme toggle (dark/light mode)
-    $('#themeToggle').on('click', function() {
-        $('body').toggleClass('dark-mode');
-        
-        if ($('body').hasClass('dark-mode')) {
-            $(this).html('<i class="fas fa-sun"></i>');
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            $(this).html('<i class="fas fa-moon"></i>');
-            localStorage.setItem('darkMode', 'disabled');
-        }
+    // Theme toggle
+    $("#themeToggle").click(function() {
+      $("body").toggleClass("dark-mode");
+      
+      if ($("body").hasClass("dark-mode")) {
+        $(this).html('<i class="fas fa-sun"></i>');
+        localStorage.setItem("darkMode", "enabled");
+      } else {
+        $(this).html('<i class="fas fa-moon"></i>');
+        localStorage.setItem("darkMode", "disabled");
+      }
     });
     
     // Check for saved theme preference
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        $('body').addClass('dark-mode');
-        $('#themeToggle').html('<i class="fas fa-sun"></i>');
+    if (localStorage.getItem("darkMode") === "enabled") {
+      $("body").addClass("dark-mode");
+      $("#themeToggle").html('<i class="fas fa-sun"></i>');
     }
-    
-    // Detect screen size changes to handle sidebar state
-    $(window).on('resize', function() {
-        if (window.innerWidth >= 992) {
-            $('body').removeClass('sidebar-open');
-        }
-    });
-});
+  });

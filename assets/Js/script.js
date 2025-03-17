@@ -2,7 +2,43 @@
   Portfolio Website JavaScript
   Custom JS for Prem Maheshwari's portfolio website
 */
-
+$(document).ready(function() {
+  // Active link state based on scroll position
+  function updateActiveNav() {
+    const scrollPosition = $(window).scrollTop() + 100;
+    
+    $("section").each(function() {
+      const sectionId = $(this).attr("id");
+      const sectionTop = $(this).offset().top;
+      const sectionBottom = sectionTop + $(this).outerHeight();
+      
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        $(".nav-item").removeClass("active");
+        $(`.nav-item[href="#${sectionId}"]`).addClass("active");
+      }
+    });
+  }
+  
+  // Update active link on scroll
+  $(window).scroll(function() {
+    updateActiveNav();
+  });
+  
+  // Initialize active link on page load
+  updateActiveNav();
+  
+  // Smooth scrolling for navigation links
+  $(".nav-item").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      const hash = this.hash;
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 60
+      }, 800);
+    }
+  });
+});
 $(document).ready(function() {
   "use strict";
   

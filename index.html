@@ -30,7 +30,7 @@
     
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
+    
 </head>
 <body>
     <!-- Preloader -->
@@ -38,38 +38,20 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Simple Fixed Navigation HTML -->
-<nav class="simple-navbar">
-  <div class="container">
-    <div class="navbar-content">
-      <!-- Mobile Menu Toggle Button -->
-      <button id="mobileMenuToggle" class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-      
-      <!-- Navigation Links -->
-      <ul id="navLinks" class="nav-links">
-        <li><a href="#home" class="nav-item active">Home</a></li>
-        <li><a href="#about" class="nav-item">About</a></li>
-        <li><a href="#expertise" class="nav-item">Expertise</a></li>
-        <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
-        <li><a href="#dashboards" class="nav-item">Dashboards</a></li>
-        <li><a href="#experience" class="nav-item">Experience</a></li>
-        <li><a href="#contact" class="nav-item">Contact</a></li>
-      </ul>
-      
-      <!-- Actions (always visible) -->
-      <div class="navbar-actions">
-        <a href="resume/Prem_Maheshwari_CV.pdf" class="cv-button" download>
-          <i class="fas fa-download"></i> CV
-        </a>
-        <button id="themeToggle" class="theme-button">
-          <i class="fas fa-moon"></i>
-        </button>
+    <nav class="horizontal-navbar">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-item active">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#expertise" class="nav-item">Expertise</a></li>
+          <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+          <li><a href="#dashboards" class="nav-item">Dashboards</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+          <li><a href="resume/Prem_Maheshwari_CV.pdf" class="nav-item cv-item" download>CV</a></li>
+        </ul>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -1101,7 +1083,5 @@
             mirror: false
         });
     </script>
-<!-- Add this right before the closing </body> tag -->
-<script src="js/navbar.js"></script>  
 </body>
 </html>
